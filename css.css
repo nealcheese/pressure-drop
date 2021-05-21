@@ -1,0 +1,135 @@
+body {
+    background-color: lightblue;
+  }
+  
+h1 {
+  margin: 1em 0 0.5em 0;
+  color: #24233d;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;   
+  font-size: 48px;
+  line-height: 42px;
+}
+
+body{
+  color: #24233d;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;   
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.inputs{
+  border:  rgb(0, 0, 0);
+  padding: 10px 5px;
+  width: 120px;
+  margin-left: auto;
+  background-color: #e2f022;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.item_no_input{
+  border:  rgb(0, 0, 0);
+  padding: 10px 5px;
+  width: 120px;
+  margin-left: auto;
+  background-color: #e2f022;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.outputs{
+  border:  rgb(0, 0, 0);
+  padding: 10px 5px;
+  width: 120px;
+  margin-left: auto;
+  background-color: #f1f1f1;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.NAfield{
+  border:  rgb(104, 99, 99);
+  padding: 10px 5px;
+  width: 120px;
+  margin-left: auto;
+  background-color: #948686;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.containerMain{
+  display: flex;
+  flex-direction:column;
+  /*border: 1px solid black;*/
+  width: 100%;
+}
+
+.BodyRow{
+  display: flex;
+  flex-direction:row;
+  /*border: 1px solid black;*/
+  width: 1000px;
+  align-self: left;
+  align-items: center;
+  min-height: 50px;
+}
+.UnitContainer{
+  display: inline-flex;
+  flex-direction:row;
+  /*border: 1px solid black;*/
+  width: 80px;
+  margin-left: 10px;
+  align-self: right;
+  align-items: left;
+}
+
+.button {
+  display: inline-block !important;
+  padding: 5px 5px !important;
+  font-size: 18px !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  outline: none !important;
+  color: rgb(0, 0, 0) !important;
+  background-color: #c1b1ee;
+  border: none !important;
+  border-radius: 5px !important;
+  box-shadow: 0 4px #999 !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+table {
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {background-color: #98d7e2;}
+
+.cell{
+  display: table-cell;
+  width: 230px;
+  align-self: left;
+}

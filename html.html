@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='css.css'>
+<script type = 'text/javascript' src = 'java.js'></script>
+</head>
+
+<h1>Pressure Profiler</h1>
+<a href="Working.html">See Working + References</a>
+
+<body>
+<h2>Input Data</h2>
+<div class = 'containerMain'>
+
+    <div class = 'BodyRow'>
+        <label for='density'>Density</label>
+        <input class='inputs' type='number' id='density' name='density' value=998>
+        <div class = 'UnitContainer'>
+            <label for='density'>kg/m3</label>
+        </div>
+    </div>
+
+    <div class = 'BodyRow'>
+        <label for='viscosity'>Dynamic Viscosity</label>
+        <input class='inputs' type='number'  id='viscosity' name='viscosity' value=0.001>
+        <div class = 'UnitContainer'>
+            <label for='viscosity'>kg/ms</label>
+        </div>
+    </div>
+
+    <div class = 'BodyRow'>
+        <label for='roughness'>Pipe Roughness</label>
+        <input class='inputs' type='number'  id='roughness' name='roughness' value=0.001>
+        <div class = 'UnitContainer'>
+            <label for='roughness'>mm</label>
+        </div>
+    </div>
+
+    <div class = 'BodyRow'>
+        <label for='flowrate'>Flowrate</label>
+        <input class='inputs' type='number'  id='flowrate' name='flowrate' value=0.0001>
+        <div class = 'UnitContainer'>
+            <label for='flowrate'>l/min</label>
+        </div>
+    </div>
+
+
+    <div class = 'BodyRow'>
+        <button class='button' onclick = 'calc_delp()'>Calculate</button>
+        <button class='button' onclick = 'AddRow()'>Add Row</button>
+    </div>
+
+</div>
+
+<h2>Pipe Route</h2>
+<table id='Table'>
+    <thread>
+        <tr>
+            <th>Item No.</th>
+            <th>Item Type</th>
+            <th>Diameter</th>
+            <th>Pipe Length</th>
+            <th>Fitting K Factor</th>
+            <th>Item Pressure Drop</th>
+            <th>Pressure Drop Total</th>
+        </tr>
+    </thread>
+    <tbody>
+        <tr>
+            <td><input class='item_no_input' type='number' id='item_no1' name='item_no1' value=1></input></td>
+            <td><select name='item_type1' id='item_type1'>
+                <option value='Pipe'>Pipe</option>
+                <option value='Ball Valve'>Ball Valve</option>
+                <option value='Globe Valve'>Globe Valve</option>
+                <option value='Bend'>Bend</option>
+                <option value='Tee'>Tee</option>
+            </select></td>
+            <td><input class='inputs' type='number' id='diameter1' name='diameter1' value=0.025><div class = 'UnitContainer'><label for='x_int'>mm</label></div></td>
+            <td><input class='inputs' type='number' id='pipe_length1' name='pipe_length1' value=1><div class = 'UnitContainer'><label for='x_int'>m</label></div></td>
+            <td><input class='NAfield' type='number' id='K_factor1' name='K_factor1' readonly></td>
+            <td><input class='inputs' type='number' id='pdrop1' name='pdrop1' value=25><div class ='UnitContainer'><label for='x_int'>Pa</label></div></td>
+            <td><input class='outputs' type='number' id='pdrop_total1' name='pdrop_total1' readonly></input><div class ='UnitContainer'><label for='x_int'>Pa</label></div></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+
